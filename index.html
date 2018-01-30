@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" numberegrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<body>
+		<h1> CT Medictiv Data Quality Tool</h1>
+		<form method = "POST" action="/send">
+			<div class ="form-group">
+				
+				<input type="text" step = "any" name = "FIRSTNAME" value = "FIRSTNAME">
+				<input type="text" step = "any" name = "LASTNAME" value = 'LASTNAME'>
+				<input type="text" step = "any" name = "GENDERCODE", value = 'GENDERCODE'>
+				<input type="number" step = "any" name = "DATEOFBIRTH", value = 'DATEOFBIRTH'>
+				<input type="text" step = "any" name = "ETHNICITYCODE", value = 'ETHNICITYCODE'>
+				<input type="text" step = "any" name = "RACECODE", value = 'RACECODE'>
+				<input type="text" step = "any" name = "MARITALSTATUS", value = 'MARITALSTATUS'>
+											
+			</div>
+			<input class ="btn btn-primary" type="Submit" name = "Submitdata">
+		</form>
+		<form method = "POST" action="/upload" enctype="multipart/form-data">
+			<div class ="form-group">
+				
+			<input type="file" name="inputFile" id="fileToUpload">	
+			</div>
+			<input class ="btn btn-primary" type="Submit" name = "SubmitFile">								
+		</form>
+	</body>
+</html>
+				
